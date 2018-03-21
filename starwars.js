@@ -34,14 +34,18 @@ fetch("https://swapi.co/api/films/")
         filmSelect.onchange();
     })
 
+
 // Recognizes the change in the dropdown menu
 filmSelect.onchange = function(event) {
     // The find() method returns the value of the first element in the array that satisfies the provided testing function
     // value for films is found in function that takes results of fetch
+   
     let selectedFilm = films.find(function(film) {
         // returns the film once it finds a match
+        
         return film.episode_id == filmSelect.value;
     })
     // Returns the text between the p tag in HTML that matches the film we have selected
     openingText.innerText = selectedFilm.opening_crawl;
+
 }

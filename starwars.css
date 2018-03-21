@@ -6,7 +6,7 @@
 h1 {
     font-family: deathStar;
     text-align: center; 
-    font-size: 70px;
+    font-size: 60px;
     letter-spacing: 4px;
 }
 
@@ -47,8 +47,7 @@ body {
 	transform: perspective(300px) rotateX(25deg);
 }
 
-#titles:after
-{
+#titles:after {
 	position: absolute;
 	content: ' ';
 	left: 0;
@@ -59,11 +58,10 @@ body {
 	pointer-events: none;
 }
 
-#titlecontent
-{
+#titlecontent {
 	position: absolute;
 	top: 100%;
-	animation: scroll 100s linear 4s infinite;
+	animation: scroll 100s linear 3s infinite;
 }
 
 @keyframes scroll {

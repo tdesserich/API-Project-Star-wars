@@ -27,13 +27,12 @@ body {
   }
 
   #openingText {
-    font-size: 50px; 
+    font-size: 70px; 
     text-align: center;  
     color: yellow;
   }
 
-  #titles
-{
+  #titles {
 	position: absolute;
 	width: 18em;
 	height: 50em;

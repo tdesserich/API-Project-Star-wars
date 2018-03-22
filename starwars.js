@@ -1,6 +1,7 @@
 // referencing the ids in the HTML, querySelector returns the first results (querySelectorAll would return all results)
 var filmSelect=document.querySelector("#filmSelect");
 var openingText=document.querySelector("#openingText");
+var textContent=document.querySelector("#textContent");
 // declared to be used in function below
 var films;
 
@@ -47,5 +48,8 @@ filmSelect.onchange = function(event) {
     })
     // Returns the text between the p tag in HTML that matches the film we have selected
     openingText.innerText = selectedFilm.opening_crawl;
-
+    textContent.classList.remove("scroll");
+    setTimeout(function() {
+        textContent.classList.add("scroll");
+    }, 100);
 }
